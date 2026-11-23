@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0f172a">
+  <title>Jeongwon Choi | Personal Homepage</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Noto Sans KR", "Malgun Gothic", sans-serif;
+      background: #0f172a; color: #f8fafc;
+    }
+    .main {
+      min-height: 100vh; display: flex; align-items: center; justify-content: center;
+      padding: 64px 28px;
+    }
+    .container { width: min(900px, 100%); }
+    .name { font-size: clamp(58px, 12vw, 92px); font-weight: 800; letter-spacing: -0.07em; margin-bottom: 14px; }
+    .english-name { color: #38bdf8; font-size: clamp(18px, 4vw, 28px); letter-spacing: 0.04em; margin-bottom: 48px; }
+    .title { font-size: clamp(27px, 5vw, 40px); line-height: 1.45; margin-bottom: 54px; font-weight: 400; }
+    .intro { max-width: 760px; color: #cbd5e1; font-size: clamp(17px, 3vw, 22px); line-height: 1.95; word-break: keep-all; }
+    .cards { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 48px; }
+    .card { background: #1e293b; border: 1px solid #334155; padding: 22px 24px; border-radius: 13px; min-width: 190px; flex: 1 1 190px; }
+    .card h2 { color: #38bdf8; font-size: 18px; margin-bottom: 11px; }
+    .card p { color: #e2e8f0; line-height: 1.7; font-size: 15px; }
+    .footer { margin-top: 56px; color: #64748b; font-size: 14px; }
+    @media (max-width: 520px) {
+      .main { padding: 54px 25px; }
+      .english-name { margin-bottom: 38px; }
+      .title { margin-bottom: 42px; }
+      .card { min-width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <main class="main">
+    <div class="container">
+      <div class="name">최정원</div>
+      <div class="english-name">JEONGWON CHOI · LAW STUDENT</div>
+
+      <div class="title">Law Student · Future Legal Professional</div>
+
+      <p class="intro">
+        안녕하세요. 최정원입니다.<br><br>
+        현재 광운대학교 법학부에서 법학을 공부하고 있습니다.
+        법과 사회의 관계에 관심을 가지고 다양한 법적 쟁점을 배우며,
+        논리적으로 생각하고 꼼꼼하게 살펴보는 태도를 키워가고 있습니다.
+        앞으로 법률 지식과 실무 역량을 쌓아 사회에 도움이 되는 법률 전문가로 성장하고 싶습니다.
+      </p>
+
+      <section class="cards" aria-label="소개 분야">
+        <article class="card">
+          <h2>Education</h2>
+          <p>Kwangwoon University<br>Department of Law</p>
+        </article>
+        <article class="card">
+          <h2>Interest</h2>
+          <p>Law & Society<br>Legal Issues</p>
+        </article>
+        <article class="card">
+          <h2>Career Goal</h2>
+          <p>Corporate Legal Affairs<br>Legal Professional</p>
+        </article>
+      </section>
+
+      <footer class="footer">© 2026 Jeongwon Choi. Personal Homepage</footer>
+    </div>
+  </main>
+</body>
+</html>
